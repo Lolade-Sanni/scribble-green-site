@@ -158,6 +158,13 @@ p {
     font-size: var(--fs-base);
 }
 
+@media (max-width:480px){
+    h1{font-size:1.8rem;}
+    h2{font-size:1.625rem;}
+    h3{font-size:1.25rem;}
+    h4{font-size:1rem;}
+    p{font-size:.9375rem;line-height:1.7;margin-bottom:var(--sp-2);}
+}
 hr { border: none; border-top: 1px solid var(--border-soft); margin: var(--sp-1) 0; width: 100%; }
 
 .headline-label { text-transform: uppercase; font-size: var(--fs-sm); font-weight: var(--fw-medium); letter-spacing: 0.08em; }
@@ -364,10 +371,11 @@ section { padding: var(--section-py) var(--section-px); }
    8. BUTTONS
 --------------------------------------------------------------------------- */
 .btn {
-    min-width: 150px; display: inline-flex; justify-content: center; align-items: center;
+    min-width: 200px; display: inline-flex; justify-content: center; align-items: center;
     padding: var(--sp-3); text-decoration: none; transition: all var(--transition);
     cursor: pointer; line-height: 1; font-weight: var(--fw-bold); font-size: var(--fs-sm);
     border: 1.5px solid transparent; border-radius: var(--radius-md);
+    margin-bottom: 1rem;
 }
 .btn-green         { background: var(--green); color: var(--white); border-color: var(--green); }
 .btn-green:hover   { background: var(--green-dark); border-color: var(--green-dark); }
@@ -457,8 +465,9 @@ section { padding: var(--section-py) var(--section-px); }
     min-width: 0;
 }
 @media (max-width: 480px) {
-    .team-card, .team-card.reversed { flex-direction: column; height: auto; text-align: center; }
-    .team-card__img-div { width: 100%; flex: 0 0 auto; aspect-ratio: 16/9; }
+    .team-card, .team-card.reversed { flex-direction: column; height: auto; text-align: left; }
+    .team-card__img-div { width: 100%; flex: 0 0 auto; aspect-ratio: 1/1; }
+    .team-card__info { font-size: var(--fs-sm); }
 }
 
 /* ---------------------------------------------------------------------------
@@ -881,9 +890,9 @@ section { padding: var(--section-py) var(--section-px); }
     text-align: center; max-width: 640px; margin: 0 auto; padding: var(--sp-6) var(--sp-5);
     background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border: 1px solid var(--border-soft);
 }
-.newsletter-form { display: flex; flex-wrap: wrap; gap: var(--sp-3); max-width: 460px; margin: var(--sp-6) auto 0; }
+.newsletter-form { display: flex;  flex-direction: column; flex-wrap: wrap; gap: var(--sp-3); max-width: 460px; margin: var(--sp-6) auto 0; }
 .newsletter-input {
-    flex: 1; min-width: 200px; padding: var(--sp-3) var(--sp-4); border: 1px solid var(--border-soft); border-radius: var(--radius-md);
+    flex: 1; min-width: 100%; padding: var(--sp-3) var(--sp-4); border: 1px solid var(--border-soft); border-radius: var(--radius-md);
     background: var(--white); color: var(--black); font-family: var(--font-sans); font-size: var(--fs-sm);
     outline: none; transition: border-color var(--transition), box-shadow var(--transition);
 }
@@ -1178,6 +1187,8 @@ section { padding: var(--section-py) var(--section-px); }
     .join-content { gap: var(--sp-5); }
 }
 @media (max-width: 600px) {
+    .join-intro {max-width: 100%}
+    .join-benefits {grid-template-columns: repeat(1, 1fr)}
     .join-form .form-row, .alumni-form .form-row { grid-template-columns: 1fr; }
 }
 
@@ -1205,11 +1216,13 @@ section { padding: var(--section-py) var(--section-px); }
 
 @media (max-width: 900px) {
     .footer__grid { grid-template-columns: repeat(2, 1fr); }
+    .footer__col {display: none}
 }
 @media (max-width: 480px) {
     .footer { padding: var(--sp-4); }
     .footer__grid { grid-template-columns: 1fr; gap: var(--sp-4); }
     .footer__bottom { flex-direction: column; align-items: center; }
+    .footer__col {display: none}
 }
 
 /* ---------------------------------------------------------------------------
