@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Insights & Articles | Research, AI & Professional Development | Scribble Green</title>
+
+    <meta name="description" content="Explore Scribble Green's collection of research-backed articles, AI insights, writing guides, strategic thinking frameworks, career advice, and professional development resources.">
+
+    <link rel="canonical" href="https://scribblegreen.com/grow/insights.html">
+    <link rel="icon" href="../../assets/logos/scribblegreen.svg" type="image/x-svg">
+
+    <meta property="og:title" content="Insights & Articles | Scribble Green">
+    <meta property="og:description" content="Discover practical articles on research, AI, writing, strategy, and professional growth from the Scribble Green team.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <!-- Image Logo Div for Navigation Bar -->
+            <div class="navbar__logo-icon">
+                <img class="navbar__logo-img" src="../../assets/logos/scribblegreen-logo.png" alt="Scribble Green Logo">
+            </div>
+            <!--Main navigation Bar Links-->
+            <ul class="navbar__nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li class="nav-dropdown">
+                    <span class="nav-dropdown__label">Offerings <span class="material-icons-round">expand_more</span></span>
+                    <div class="nav-dropdown__menu">
+                        <a href="../../pages/offerings/research-intelligence.html">Research Intelligence</a>
+                        <a href="../../pages/offerings/strategic-planning.html">Strategic Planning</a>
+                        <a href="../../pages/offerings/digital-solutions.html">Digital Solutions</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <span class="nav-dropdown__label">Grow <span class="material-icons-round">expand_more</span></span>
+                    <div class="nav-dropdown__menu">
+                        <a href="../../pages/grow/events.html">Events</a>
+                        <a href="../../pages/grow/insights.html">Insights</a>
+                        <a href="../../pages/grow/courses.html">Courses</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <span class="nav-dropdown__label">Career <span class="material-icons-round">expand_more</span></span>
+                    <div class="nav-dropdown__menu">
+                        <a href="../../pages/career/alumni-network.html">Alumni Network</a>
+                        <a href="../../pages/career/join-pipeline.html">Join the Pipeline</a>
+                    </div>
+                </li>
+                <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+            <div class="navbar__hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <nav class="navbar__mobile" id="mobileNav">
+        <span class="mob-label">Scribblegreen</span>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Us</a>
+        <span class="mob-label">Offerings</span>
+        <a href="../../pages/offerings/research-intelligence.html">Research Intelligence</a>
+        <a href="../../pages/offerings/strategic-planning.html">Strategic Planning</a>
+        <a href="../../pages/offerings/digital-solutions.html">Digital Solutions</a>
+        <span class="mob-label">Grow</span>
+        <a href="../../pages/grow/events.html">Events</a>
+        <a href="../../pages/grow/insights.html">Insights</a>
+        <a href="../../pages/grow/courses.html">Courses</a>
+        <span class="mob-label">Career</span>
+        <a href="../../pages/career/alumni-network.html">Alumni Network</a>
+        <a href="../../pages/career/join-pipeline.html">Join the Pipeline</a>
+        <span class="mob-label">Contact Us</span>
+        <a href="../contact.html">Contact</a>
+    </nav>
+</header>
+    <section class="insights-hero-section" >
+        <div class="container">
+            <div class="insights-hero-section__text-div bg-green">
+                <span class="headline-label">Insights & Articles</span>
+                <h1>Perspectives that get you thinking</h1>
+                <div class="divider centered"></div>
+                <p>Explore research-backed articles, practical frameworks, industry trends, and professional insights designed to help individuals and organizations make smarter decisions, communicate more effectively, and grow with confidence.</p>
+            </div>
+        </div>
+    </section>
+    <section class="explore-insights-section bg-light-green" >
+        <div class="container">
+            <span class="headline-label">Explore Insights</span>
+            <h2>Explore Insights</h2>
+            <div class="divider"></div>
+            <p>Discover practical ideas across research, writing, strategy, technology, and professional development. Whether you're building a business, leading a team, writing a thesis, or exploring AI, our articles are designed to turn complex topics into clear, actionable knowledge.</p>
+            <div class="container insights-container bg-white" style="border-left: 3px solid var(--green-lime);">
+                <div class="articles-filter-bar">
+                    <button class="filter-btn active" data-articles-filter="all">All Topics</button>
+                    <button class="filter-btn" data-articles-filter="ai">AI &amp; Technology</button>
+                    <button class="filter-btn" data-articles-filter="research">Research</button>
+                    <button class="filter-btn" data-articles-filter="writing">Writing</button>
+                    <button class="filter-btn" data-articles-filter="career">Career</button>
+                    <button class="filter-btn" data-articles-filter="strategy">Strategy</button>
+                </div>
+
+                <!-- Articles rendered by articles.js -->
+                <div class="articles-grid" id="articlesGrid">
+                    <!-- Populated dynamically -->
+                    <div class="articles-grid__loading">
+                        <span class="material-icons-round articles-grid__loading-icon">article</span>
+                        Loading articles…
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section bg-white">
+        <div class="container--narrow newsletter-container bg-light-green">
+            <span class="headline-label">Never Miss an Update</span>
+            <h2>Subscribe to Our Newsletter</h2>
+            <div class="divider centered"></div>
+
+            <p>
+                Join our community of researchers, professionals, founders, and students who
+                receive curated insights, practical tools, upcoming events, and growth
+                opportunities delivered directly to their inbox.
+            </p>
+
+            <form class="newsletter-form" data-form="newsletter">
+                <label>
+                    <input
+                            class="newsletter-input"
+                            type="text"
+                            placeholder="Enter your First Name"
+                            required
+                    >
+                </label>
+
+                <label>
+                    <input
+                            class="newsletter-input"
+                            type="email"
+                            placeholder="your@email.com"
+                            autocomplete="email"
+                    >
+                </label>
+
+                <button type="submit" class="btn btn-white newsletter-btn">
+                    Subscribe
+                    <span class="material-icons-round">send</span>
+                </button>
+
+                <div class="nl-error"></div>
+                <div class="nl-success"></div>
+            </form>
+
+            <p class="newsletter-note">
+                No spam. Unsubscribe at any time. Your information is handled securely and used only to send updates you've requested.
+            </p>
+        </div>
+    </section>
+    <section class="cta-section bg-green">
+        <h2>Turn Insights into Action</h2>
+        <div class="divider centered"></div>
+        <p>Need support with research, strategy, training, or digital solutions? Let's discuss your goals and build a practical path forward.</p>
+        <div class="btn-group">
+            <a class="btn btn-white" href="../contact.html">Contact Us</a>
+            <a class="btn btn-outline-white" href="../index.html#what-we-do">Explore Our Offerings</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <div class="footer__brand-logo-placeholder">scribble<span>green</span></div>
+                    </div>
+                    <p>World-class research, writing, and AI innovation for businesses, academics, and media professionals across the World</p>
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/company/scribble-green" class="footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title">Offerings</div>
+                    <ul>
+                        <li><a href="../offerings/research-intelligence.html">Research Intelligence</a></li>
+                        <li><a href="../offerings/strategic-planning.html">Strategic Planning</a></li>
+                        <li><a href="../offerings/digital-solutions.html">Digital Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title">Company</div>
+                    <ul>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../grow/events.html">Events</a></li>
+                        <li><a href="../grow/insights.html">Insights</a></li>
+                        <li><a href="../grow/courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title">Career</div>
+                    <ul>
+                        <li><a href="../career/alumni-network.html">Alumni Network</a></li>
+                        <li><a href="../career/join-pipeline.html">Join the Pipeline</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__col-title">Contact</div>
+                    <ul>
+                        <li><a href="mailto:m.johnscribblegreen@gmail.com">Email Us</a></li>
+                        <li><a href="tel:+2348107487190">+234 810 748 7190</a></li>
+                        <li><a href="../contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 Scribble Green. All rights reserved. Lagos, Nigeria.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/articles.js"></script>
+</body>
+</html>

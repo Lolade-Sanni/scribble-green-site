@@ -2,9 +2,489 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join the Pipeline | Scribble Green</title>
+
+    <meta name="description" content="Join the Scribble Green Pipeline as a volunteer, freelancer, or through an open application. Contribute to impactful research, strategy, technology, writing, and digital innovation projects while growing your skills and professional network.">
+
+    <link rel="canonical" href="https://scribblegreen.com/career/join-pipeline.html">
+    <link rel="icon" href="../../assets/logos/scribblegreen.svg" type="image/x-svg">    <link rel="stylesheet" href="../../css/styles.css">
+
+    <meta property="og:title" content="Join the Pipeline | Scribble Green">
+    <meta property="og:description" content="Explore opportunities to volunteer, freelance, or submit an open application to join Scribble Green's growing network of researchers, strategists, developers, writers, and innovators.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <!-- Page-specific styles for the reworked Join the Pipeline + Alumni Network pages -->
 </head>
 <body>
+<header>
+    <nav class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <div class="navbar__logo-icon">
+                <img class="navbar__logo-img" src="../../assets/logos/scribblegreen-logo.png" alt="Scribble Green Logo">
+            </div>
+            <ul class="navbar__nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li class="nav-dropdown">
+                    <span class="nav-dropdown__label">Offerings <span class="material-icons-round">expand_more</span></span>
+                    <div class="nav-dropdown__menu">
+                        <a href="../../pages/offerings/research-intelligence.html">Research Intelligence</a>
+                        <a href="../../pages/offerings/strategic-planning.html">Strategic Planning</a>
+                        <a href="../../pages/offerings/digital-solutions.html">Digital Solutions</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <span class="nav-dropdown__label">Grow <span class="material-icons-round">expand_more</span></span>
+                    <div class="nav-dropdown__menu">
+                        <a href="../../pages/grow/events.html">Events</a>
+                        <a href="../../pages/grow/insights/article-boiler-template.html">Insights</a>
+                        <a href="../../pages/grow/courses.html">Courses</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <span class="nav-dropdown__label">Career <span class="material-icons-round">expand_more</span></span>
+                    <div class="nav-dropdown__menu">
+                        <a href="../../pages/career/alumni-network.html">Alumni Network</a>
+                        <a href="../../pages/career/join-pipeline.html">Join the Pipeline</a>
+                    </div>
+                </li>
+                <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+            <div class="navbar__hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <nav class="navbar__mobile" id="mobileNav">
+        <span class="mob-label">Scribblegreen</span>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Us</a>
+        <span class="mob-label">Offerings</span>
+        <a href="../../pages/offerings/research-intelligence.html">Research Intelligence</a>
+        <a href="../../pages/offerings/strategic-planning.html">Strategic Planning</a>
+        <a href="../../pages/offerings/digital-solutions.html">Digital Solutions</a>
+        <span class="mob-label">Grow</span>
+        <a href="../../pages/grow/events.html">Events</a>
+        <a href="../../pages/grow/insights.html">Insights</a>
+        <a href="../../pages/grow/courses.html">Courses</a>
+        <span class="mob-label">Career</span>
+        <a href="../../pages/career/alumni-network.html">Alumni Network</a>
+        <a href="../../pages/career/join-pipeline.html">Join the Pipeline</a>
+        <span class="mob-label">Contact Us</span>
+        <a href="../contact.html">Contact</a>
+    </nav>
+</header>
 
+<!-- HERO -->
+<section class="join-pipeline__hero bg-green">
+    <div class="join-pipeline__hero-text-div">
+        <span class="headline-label">Careers &amp; Contribution</span>
+        <h1>Build Something That Matters, With Us</h1>
+        <div class="divider centered"></div>
+        <p>
+            Whether you have an hour a week or a full portfolio to bring,
+            there's a place for you in the ScribbleGreen pipeline &mdash;
+            as a volunteer, a freelance collaborator, or through an open
+            application built around your own skills. Every track feeds
+            real research, writing, and digital innovation projects, not
+            busywork.
+        </p>
+    </div>
+</section>
+
+<!-- EXPLORE PIPELINE -->
+<section class="explore-pipeline" id="opportunities">
+    <div class="explore-pipeline__info">
+        <span class="headline-label">Our Team</span>
+        <h2>Find Your Path to Contribute</h2>
+        <p>
+            Every project at ScribbleGreen is powered by people who
+            bring different levels of time and expertise to the table.
+            Pick the track that fits how you want to work with us —
+            your choice here also shapes the application form at the
+            bottom of this page.
+        </p>
+    </div>
+    <div class="explore-pipeline__tabs" role="tablist" aria-label="Pipeline tracks">
+        <button class="explore-pipeline__tab active" data-tab="volunteer" role="tab" aria-selected="true">Volunteers</button>
+        <button class="explore-pipeline__tab" data-tab="freelancer" role="tab" aria-selected="false">Freelancers</button>
+        <button class="explore-pipeline__tab" data-tab="open-applications" role="tab" aria-selected="false">Open Application</button>
+    </div>
+
+    <div class="pipeline-panel active" data-resources-panel="volunteer">
+        <div class="join-content">
+            <section class="join-intro">
+                <span class="join-intro__badge">Volunteer Programme</span>
+                <h2>Contribute Your Skills &amp; Make an Impact</h2>
+                <p>
+                    Join our volunteer network and help support innovative projects,
+                    research initiatives, events, and community programmes. Volunteers
+                    typically commit a few hours a week alongside their studies or day
+                    job, working directly with ScribbleGreen leads on active briefs
+                    rather than shadowing from the sidelines.
+                </p>
+                <div class="join-benefits">
+                    <div class="join-benefit">
+                        <span class="material-icons-round">workspace_premium</span>
+                        <p>Gain practical, portfolio-ready experience</p>
+                    </div>
+                    <div class="join-benefit">
+                        <span class="material-icons-round">groups</span>
+                        <p>Work alongside a diverse, experienced team</p>
+                    </div>
+                    <div class="join-benefit">
+                        <span class="material-icons-round">school</span>
+                        <p>Develop research, writing, and digital skills</p>
+                    </div>
+                </div>
+
+            </section>
+            <div class="join-media">
+                <div class="img-placeholder img-placeholder--wide">
+                    <img src="../../assets/overlays/volunteers.jpg" alt="">
+                </div>
+            </div>
+            <a class="btn btn-green join-track-cta" href="#apply" data-select-track="volunteer">
+                Apply as a Volunteer <span class="material-icons-round">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="pipeline-panel" data-resources-panel="freelancer">
+        <div class="join-content">
+            <section class="join-intro">
+                <span class="join-intro__badge">Freelance Opportunities</span>
+                <h2>Work With Us On Exciting Projects</h2>
+                <p>
+                    We collaborate with freelance professionals across design,
+                    development, research, data analysis, writing, and strategy.
+                    Freelancers join our talent pool and get matched to briefs
+                    as they come in, with scope, timeline, and compensation
+                    agreed before any work begins.
+                </p>
+                <div class="join-benefits">
+                    <div class="join-benefit">
+                        <span class="material-icons-round">payments</span>
+                        <p>Clear, project-based compensation</p>
+                    </div>
+                    <div class="join-benefit">
+                        <span class="material-icons-round">schedule</span>
+                        <p>Flexible work arrangements around your schedule</p>
+                    </div>
+                    <div class="join-benefit">
+                        <span class="material-icons-round">workspaces</span>
+                        <p>Meaningful client and internal projects</p>
+                    </div>
+                </div>
+
+            </section>
+            <div class="join-media">
+                <div class="img-placeholder img-placeholder--wide">
+                    <img src="../../assets/overlays/freelancer.jpg" alt="">
+                </div>
+            </div>
+            <a class="btn btn-green join-track-cta" href="#apply" data-select-track="freelancer">
+                Join the Talent Pool <span class="material-icons-round">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="pipeline-panel" data-resources-panel="open-applications">
+        <div class="join-content">
+            <section class="join-intro">
+                <span class="join-intro__badge">Open Applications</span>
+                <h2>Don't See A Role That Fits?</h2>
+                <p>
+                    We are always interested in meeting talented individuals. Submit
+                    an open application and tell us how your skills, ideas, and
+                    experience could contribute to our mission — we keep every
+                    open application on file and reach out when a matching
+                    opportunity comes up.
+                </p>
+                <div class="join-benefits">
+                    <div class="join-benefit">
+                        <span class="material-icons-round">rocket_launch</span>
+                        <p>First in line for future opportunities</p>
+                    </div>
+                    <div class="join-benefit">
+                        <span class="material-icons-round">lightbulb</span>
+                        <p>Unique or unconventional skill sets welcome</p>
+                    </div>
+                    <div class="join-benefit">
+                        <span class="material-icons-round">person_search</span>
+                        <p>A talent-first, not title-first, approach</p>
+                    </div>
+                </div>
+
+            </section>
+            <div class="join-media">
+                <div class="img-placeholder img-placeholder--wide">
+                    <img src="../../assets/overlays/open-application.jpg" alt="">
+                </div>
+            </div>
+            <a class="btn btn-green join-track-cta" href="#apply" data-select-track="open-applications">
+                Submit an Open Application <span class="material-icons-round">arrow_forward</span>
+            </a>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="pipeline-steps">
+    <div class="section-heading">
+        <span class="headline-label">The Process</span>
+        <h2>How the Pipeline Works</h2>
+        <p>From first click to first project — here's what to expect once you apply.</p>
+    </div>
+    <div class="pipeline-steps__grid">
+        <article class="pipeline-step">
+            <span class="pipeline-step__number">01</span>
+            <h3>Choose your track</h3>
+            <p>Pick volunteer, freelance, or open application above based on how you want to work with us.</p>
+        </article>
+        <article class="pipeline-step">
+            <span class="pipeline-step__number">02</span>
+            <h3>Tell us about you</h3>
+            <p>Fill out the short form below with your background, interests, and links to past work.</p>
+        </article>
+        <article class="pipeline-step">
+            <span class="pipeline-step__number">03</span>
+            <h3>We review &amp; match</h3>
+            <p>Our team reviews every application against current and upcoming project needs.</p>
+        </article>
+        <article class="pipeline-step">
+            <span class="pipeline-step__number">04</span>
+            <h3>Start contributing</h3>
+            <p>You're matched to a project or added to our talent pool, with an onboarding call to kick things off.</p>
+        </article>
+    </div>
+</section>
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="section-heading">
+        <span class="headline-label">Questions</span>
+        <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="accordion">
+        <div class="accordion__item">
+            <div class="accordion__header">Do I need prior experience to volunteer? <span class="accordion__icon">+</span></div>
+            <div class="accordion__body"><p>No — we welcome students and early-career contributors. We look for curiosity and reliability more than a finished résumé, and every volunteer is paired with a lead for guidance.</p></div>
+        </div>
+        <div class="accordion__item">
+            <div class="accordion__header">Is volunteering paid? <span class="accordion__icon">+</span></div>
+            <div class="accordion__body"><p>Volunteer roles are unpaid but come with mentorship, references, and — where relevant — bylines or credited work. Freelance and open-application roles are compensated based on project scope.</p></div>
+        </div>
+        <div class="accordion__item">
+            <div class="accordion__header">Can a volunteer become a paid freelancer? <span class="accordion__icon">+</span></div>
+            <div class="accordion__body"><p>Yes. Many of our freelancers started as volunteers. Strong volunteer contributors are often the first people we call when a paid brief opens up in their area.</p></div>
+        </div>
+        <div class="accordion__item">
+            <div class="accordion__header">How long does it take to hear back? <span class="accordion__icon">+</span></div>
+            <div class="accordion__body"><p>Volunteer and freelance applications are typically reviewed within two weeks. Open applications are kept on file and may take longer, since we're matching against future rather than current needs.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- SINGLE DYNAMIC APPLICATION FORM -->
+<section class="apply-form-section" id="apply">
+    <div class="apply-form-wrap">
+        <span class="apply-form-wrap__track" data-form-track-label>Volunteer Programme</span>
+        <h3 data-form-title>Become a Volunteer</h3>
+        <p data-form-subtitle>Tell us a bit about yourself and where you'd like to help.</p>
+
+        <form class="join-form" id="pipelineForm" novalidate>
+            <input type="hidden" name="track" id="trackInput" value="volunteer">
+
+            <input type="text" name="fullName" placeholder="Full Name" aria-label="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number">
+
+            <!-- Volunteer-only field -->
+            <div data-track-field="volunteer" class="is-visible">
+                <select name="interest" aria-label="Area of Interest">
+                    <option value="">Select Area of Interest</option>
+                    <option>Events</option>
+                    <option>Research</option>
+                    <option>Design</option>
+                    <option>Technology</option>
+                </select>
+            </div>
+
+            <!-- Freelancer-only fields -->
+            <div data-track-field="freelancer">
+                <input type="url" name="portfolio" placeholder="Portfolio / LinkedIn" aria-label="Portfolio or LinkedIn URL">
+            </div>
+            <div data-track-field="freelancer">
+                <select name="expertise" aria-label="Primary Expertise">
+                    <option value="">Primary Expertise</option>
+                    <option>Design</option>
+                    <option>Development</option>
+                    <option>Research</option>
+                    <option>Content Writing</option>
+                </select>
+            </div>
+
+            <!-- Open application-only fields -->
+            <div data-track-field="open-applications">
+                <input type="url" name="portfolio_open" placeholder="Portfolio / LinkedIn" aria-label="Portfolio or LinkedIn URL">
+            </div>
+            <div data-track-field="open-applications">
+                <input type="text" name="role" placeholder="Desired Role" aria-label="Desired Role">
+            </div>
+
+            <textarea name="about" placeholder="Tell us about yourself" aria-label="Tell us about yourself" data-form-textarea></textarea>
+
+            <button type="submit" class="btn btn-green" data-form-submit>Apply as Volunteer</button>
+        </form>
+    </div>
+</section>
+
+<section class="cta-section bg-green">
+    <h2>Let's Get to Work.</h2>
+    <div class="divider centered"></div>
+    <p>Tell us what you need. We'll come back with a clear plan within 3 business days.</p>
+    <div class="btn-group">
+        <a class="btn btn-white" href="../contact.html">Contact Us</a>
+        <a class="btn btn-outline-white" href="../about.html">About Us</a>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__brand-logo">
+                    <div class="footer__brand-logo-placeholder">scribble<span>green</span></div>
+                </div>
+                <p>World-class research, writing, and AI innovation for businesses, academics, and media professionals across the World</p>
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/company/scribble-green" class="footer__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> </a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Offerings</div>
+                <ul>
+                    <li><a href="../offerings/research-intelligence.html">Research Intelligence</a></li>
+                    <li><a href="../offerings/strategic-planning.html">Strategic Planning</a></li>
+                    <li><a href="../offerings/digital-solutions.html">Digital Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Company</div>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../grow/events.html">Events</a></li>
+                    <li><a href="../grow/insights.html">Insights</a></li>
+                    <li><a href="../grow/courses.html">Courses</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Career</div>
+                <ul>
+                    <li><a href="../career/alumni-network.html">Alumni Network</a></li>
+                    <li><a href="../career/join-pipeline.html">Join the Pipeline</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="footer__col-title">Contact</div>
+                <ul>
+                    <li><a href="mailto:m.johnscribblegreen@gmail.com">Email Us</a></li>
+                    <li><a href="tel:+2348107487190">+234 810 748 7190</a></li>
+                    <li><a href="../contact.html">Contact Page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Scribble Green. All rights reserved. Lagos, Nigeria.</p>
+        </div>
+    </div>
+</footer>
+<script src="../../js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tabs = document.querySelectorAll('.explore-pipeline__tab');
+        var panels = document.querySelectorAll('.pipeline-panel');
+        var trackInput = document.getElementById('trackInput');
+        var formTrackLabel = document.querySelector('[data-form-track-label]');
+        var formTitle = document.querySelector('[data-form-title]');
+        var formSubtitle = document.querySelector('[data-form-subtitle]');
+        var formTextarea = document.querySelector('[data-form-textarea]');
+        var formSubmit = document.querySelector('[data-form-submit]');
+        var trackFields = document.querySelectorAll('[data-track-field]');
+
+        var trackContent = {
+            'volunteer': {
+                label: 'Volunteer Programme',
+                title: 'Become a Volunteer',
+                subtitle: "Tell us a bit about yourself and where you'd like to help.",
+                placeholder: 'Tell us about yourself',
+                submit: 'Apply as Volunteer'
+            },
+            'freelancer': {
+                label: 'Freelance Opportunities',
+                title: 'Join Our Freelance Network',
+                subtitle: 'Share your experience and a link to your recent work.',
+                placeholder: 'Describe your experience',
+                submit: 'Join Talent Pool'
+            },
+            'open-applications': {
+                label: 'Open Applications',
+                title: 'Submit an Open Application',
+                subtitle: "Not sure which role fits? Tell us how you'd like to contribute.",
+                placeholder: "Tell us how you'd like to contribute",
+                submit: 'Submit Application'
+            }
+        };
+
+        function setTrack(track) {
+            tabs.forEach(function (tab) {
+                var isActive = tab.getAttribute('data-tab') === track;
+                tab.classList.toggle('active', isActive);
+                tab.setAttribute('aria-selected', isActive);
+            });
+            panels.forEach(function (panel) {
+                panel.classList.toggle('active', panel.getAttribute('data-resources-panel') === track);
+            });
+            trackFields.forEach(function (field) {
+                field.classList.toggle('is-visible', field.getAttribute('data-track-field') === track);
+            });
+
+            var content = trackContent[track];
+            trackInput.value = track;
+            formTrackLabel.textContent = content.label;
+            formTitle.textContent = content.title;
+            formSubtitle.textContent = content.subtitle;
+            formTextarea.setAttribute('placeholder', content.placeholder);
+            formSubmit.textContent = content.submit;
+        }
+
+        tabs.forEach(function (tab) {
+            tab.addEventListener('click', function () {
+                setTrack(tab.getAttribute('data-tab'));
+            });
+        });
+
+        document.querySelectorAll('[data-select-track]').forEach(function (link) {
+            link.addEventListener('click', function () {
+                setTrack(link.getAttribute('data-select-track'));
+            });
+        });
+
+        document.querySelectorAll('.accordion__item').forEach(function (item) {
+            var header = item.querySelector('.accordion__header');
+            header.addEventListener('click', function () {
+                item.classList.toggle('open');
+            });
+        });
+
+        // Initialize default state
+        setTrack('volunteer');
+    });
+</script>
 </body>
 </html>
